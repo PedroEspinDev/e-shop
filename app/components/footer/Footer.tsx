@@ -29,7 +29,7 @@ const Footer = () => {
 
                     <div className="w-full md:w-1/3 mb-6 md:mb-0">
                         <h3 className="text-base font-bold mb-2">Abount us</h3>
-                        <p className="mb-2"></p>
+                        <p className="mb-2">We are a company committed to the customer, we serve products of all kinds in the field of electronics, appliances, computing, among others, we are your trusted store.</p>
                         <p>&copy; {new Date().getFullYear()} E~Shop. All rights reserved.</p>
                     </div>
 

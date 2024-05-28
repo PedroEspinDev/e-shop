@@ -13,11 +13,7 @@ const NavBar = () => {
         <div className="sticky top-0 bg-slate-200 z-30 shadow-sm">
             <div className="py-4 border-b-[1px]">
                 <Container>
-                    <div className="flex 
-                    items-center 
-                    justify-between 
-                    gap-3 
-                    md-gap-0">
+                    <div className="flex items-center justify-between gap-3 md-gap-0">
                         <Link href={"/"} className={`${redressed.className} font-bold text-2xl`}>
                             E-Shop
                         </Link>

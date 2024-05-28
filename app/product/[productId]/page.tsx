@@ -1,9 +1,16 @@
-import React from 'react'
-
-function page() {
-  return (
-    <div>productId</div>
-  )
+import Container from "@/app/components/Container";
+import ProductDetails from "@/app/components/product/ProductDetails";
+import { product } from "@/utils/product";
+interface IParams{
+    productId?: string
 }
 
-export default page
+const Product = ({params}: {params: IParams}) => {
+    return ( 
+        <Container>
+            <ProductDetails product={product} />
+        </Container>
+     );
+}
+ 
+export default Product;
