@@ -2,6 +2,7 @@ import Image from "next/image";
 import { truncateText } from "../../../utils/truncateText";
 import { formatePrice } from "../../../utils/formatePrice";
 import { Rating } from "@mui/material";
+
 import Link from "next/link";
 
 interface ProductCardProps{
