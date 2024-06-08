@@ -4,16 +4,17 @@ import { formatePrice } from "../../../utils/formatePrice";
 import { Rating } from "@mui/material";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 interface ProductCardProps{
     data: any
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({data}) => {
-
+const ProductCard: React.FC<ProductCardProps> = ({
+    data}) => {
 
     const productRating = data.reviews.reduce((acc: number, item: { rating: number; }) => item.rating + acc, 0) / data.reviews.length
-
+    
     return ( 
         <Link 
             href={`/product/${data.id}`}
